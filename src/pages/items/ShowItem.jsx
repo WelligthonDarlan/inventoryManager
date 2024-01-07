@@ -35,7 +35,7 @@ export default function ShowItem() {
         <p><b>Atualizado em:</b> {formatDateTime(item.updatedAt)}</p>
       </div>
       <div className="showItemBtn">
-        <Link to={`/items/${item.id}/update`} className="button is-small">
+        <Link to={`/inventoryManager/items/${item.id}/update`} className="button is-small">
           Atualizar
         </Link>
         <DeleteButton itemId={item.id} itemName={item.name} />

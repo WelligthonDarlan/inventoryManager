@@ -135,7 +135,7 @@ export default function Home() {
                   <td>{item.name}</td>
                   <td>{item.quantity} unid.</td>
                   <td>{item.category}</td>
-                  <td><Link to={`/items/${item.id}`} className="button is-small">Ver</Link></td>
+                  <td><Link to={`/inventoryManager/items/${item.id}`} className="button is-small">Ver</Link></td>
                 </tr>
               ))}
             </tbody>
@@ -183,7 +183,7 @@ export default function Home() {
                   <td>{item.name}</td>
                   <td>{item.quantity} unid.</td>
                   <td>{item.category}</td>
-                  <td><Link to={`/items/${item.id}`} className="button is-small">Ver</Link></td>
+                  <td><Link to={`/inventoryManager/items/${item.id}`} className="button is-small">Ver</Link></td>
                 </tr>
               ))}
             </tbody>
