@@ -6,8 +6,8 @@ export default function RootLayout() {
       <header>
         <Link to="/" className="logo">Furniture Inventory Manager</Link>
         <nav>
-          <Link to="/">Início</Link>
-          <Link to="/items">Items</Link>
+          <Link to="/inventoryManager">Início</Link>
+          <Link to="/inventoryManager/items">Items</Link>
         </nav>
       </header>
       <div>
