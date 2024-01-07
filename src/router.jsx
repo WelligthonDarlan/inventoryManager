@@ -36,22 +36,20 @@ import ShowItem from "./pages/items/ShowItem";
 import UpdateItem from "./pages/items/UpdateItem";
 import Home from "./pages/Home";
 
-const repoName = "inventoryManager"; // Substitua pelo nome real do seu repositório
-
 const router = createBrowserRouter([
   {
-    path: `/${repoName}`, // Adiciona o nome do repositório à rota base
+    path: `/inventoryManager`, 
     element: <RootLayout />,
     children: [
       { index: true, element: <Home /> },
       {
-        path: `/${repoName}/items`,
+        path: `/inventoryManager/items`,
         element: <ItemsLayout />,
         children: [
           { index: true, element: <ListItems /> },
-          { path: `/${repoName}/new`, element: <CreateItem /> },
-          { path: `/${repoName}/:id`, element: <ShowItem /> },
-          { path: `/${repoName}/:id/update`, element: <UpdateItem /> },
+          { path: `/inventoryManager/new`, element: <CreateItem /> },
+          { path: `/inventoryManager/:id`, element: <ShowItem /> },
+          { path: `/inventoryManager/:id/update`, element: <UpdateItem /> },
         ],
       },
     ],
