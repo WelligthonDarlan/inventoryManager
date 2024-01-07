@@ -47,9 +47,9 @@ const router = createBrowserRouter([
         element: <ItemsLayout />,
         children: [
           { index: true, element: <ListItems /> },
-          { path: `new`, element: <CreateItem /> },
-          { path: `:id`, element: <ShowItem /> },
-          { path: `:id/update`, element: <UpdateItem /> },
+          { path: `/inventoryManager/items/new`, element: <CreateItem /> },
+          { path: `/inventoryManager/items/:id`, element: <ShowItem /> },
+          { path: `/inventoryManager/items/:id/update`, element: <UpdateItem /> },
         ],
       },
     ],
