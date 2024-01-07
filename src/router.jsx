@@ -45,13 +45,13 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       {
-        path: "items",
+        path: `/${repoName}item`,
         element: <ItemsLayout />,
         children: [
           { index: true, element: <ListItems /> },
-          { path: "new", element: <CreateItem /> },
-          { path: ":id", element: <ShowItem /> },
-          { path: ":id/update", element: <UpdateItem /> },
+          { path: `/${repoName}new`, element: <CreateItem /> },
+          { path: `/${repoName}:id`, element: <ShowItem /> },
+          { path: `/${repoName}:id/update`, element: <UpdateItem /> },
         ],
       },
     ],
