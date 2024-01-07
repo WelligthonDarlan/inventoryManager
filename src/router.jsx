@@ -38,18 +38,18 @@ import Home from "./pages/Home";
 
 const router = createBrowserRouter([
   {
-    path: `/inventoryManager`, 
+    path: `/inventoryManager/`, 
     element: <RootLayout />,
     children: [
       { index: true, element: <Home /> },
       {
-        path: `/inventoryManager/items`,
+        path: `/inventoryManager/items/`,
         element: <ItemsLayout />,
         children: [
           { index: true, element: <ListItems /> },
-          { path: `/inventoryManager/items/new`, element: <CreateItem /> },
-          { path: `/inventoryManager/items/:id`, element: <ShowItem /> },
-          { path: `/inventoryManager/items/:id/update`, element: <UpdateItem /> },
+          { path: `/inventoryManager/items/new/`, element: <CreateItem /> },
+          { path: `/inventoryManager/items/:id/`, element: <ShowItem /> },
+          { path: `/inventoryManager/items/:id/update/`, element: <UpdateItem /> },
         ],
       },
     ],
