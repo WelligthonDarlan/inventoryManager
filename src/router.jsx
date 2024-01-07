@@ -43,13 +43,13 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       {
-        path: `/inventoryManager/items`,
+        path: `inventoryManager/items`,
         element: <ItemsLayout />,
         children: [
           { index: true, element: <ListItems /> },
-          { path: `/inventoryManager/new`, element: <CreateItem /> },
-          { path: `/inventoryManager/:id`, element: <ShowItem /> },
-          { path: `/inventoryManager/:id/update`, element: <UpdateItem /> },
+          { path: `new`, element: <CreateItem /> },
+          { path: `:id`, element: <ShowItem /> },
+          { path: `:id/update`, element: <UpdateItem /> },
         ],
       },
     ],
