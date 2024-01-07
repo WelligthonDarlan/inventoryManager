@@ -31,15 +31,13 @@ export const BarChart = () => {
         data: quantities,
         backgroundColor: [
           '#36A2EB', '#9966FF', '#FF6384', '#4BC0C0', '#ffc107',
-          '#E14948', '#BA255F', '#4ABD9E', '#F8DD6A', '#145A98',
-          '#D682D8', '#42476F', '#F8985B', '#4F7C81', '#000226'
+          '#E14948', '#ffff66', '#4ABD9E', '#F8DD6A', '#145A98',
+          '#D682D8', '#42476F', '#F8985B', '#4F7C81', '#BA255F'
         ],
         borderColor: [
-          '#36A2EB', '#9966FF', '#FF6384', '#4BC0C0', '#ffc107',
-          '#E14948', '#BA255F', '#4ABD9E', '#F8DD6A', '#145A98',
-          '#D682D8', '#42476F', '#F8985B', '#4F7C81', '#000226'
+          '#2C2C2D'
         ],
-        borderWidth: 0,
+        borderWidth:0,
       }
     ]
   };
@@ -49,23 +47,23 @@ export const BarChart = () => {
       padding: 0,
     },
     plugins: {
-        legend: {
-            display: true,
-            position: 'bottom',
-            align: 'center',
-            maxWidth: 200,
-            
-            labels: {
-              boxWidth: 20,
-              padding: 10,
-            },
-            title: {
-              display: false,
-              text: "Quantidade por tipos de moveis",
-              font: {
-                size: 18
-            }
-            }
+      legend: {
+          display: false,
+          position: 'bottom',
+          align: 'center',
+          maxWidth: 200,
+          
+          labels: {
+            boxWidth: 20,
+            padding: 10,
+          },
+          title: {
+            display: false,
+            text: "Quantidade por tipos de moveis",
+            font: {
+              size: 18
+          }
+        }
       }
     }
   }
@@ -94,7 +92,7 @@ export const BarChart = () => {
     datasets: [
       {
         label: 'Valor',
-        barThickness: 30,
+        barThickness: 10,
         data: sortedQuantities,
         backgroundColor: [
           '#36A2EB', '#9966FF', '#FF6384', '#4BC0C0', '#ffc107',
@@ -114,17 +112,13 @@ export const BarChart = () => {
   const optionsBar = {
     plugins: {
         legend: {
-            display: true,
+            display: false,
             labels: {
               boxWidth: 0,
               padding: 5,
             },
             title: {
               display: false,
-              text: "Preço por tipos de moveis",
-              font: {
-                size: 18
-            }
             }
       }
     }

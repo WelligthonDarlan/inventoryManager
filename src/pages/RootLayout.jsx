@@ -4,7 +4,7 @@ export default function RootLayout() {
   return (
     <>
       <header>
-        <Link to="/" className="logo">Furniture Inventory Manager</Link>
+        <Link to="/inventoryManager" className="logo">Furniture Inventory Manager</Link>
         <nav>
           <Link to="/inventoryManager">Início</Link>
           <Link to="/inventoryManager/items">Items</Link>

@@ -7,8 +7,22 @@ export default function ItemsLayout() {
     <main>
       <h1>Inventory</h1>
       <div className="tabs">
-        <Link to="/inventoryManager/items" className={`tab ${pathname === "/items" ? "active" : ""}`}>Todos os itens</Link>
-        <Link to="/inventoryManager/items/new" className={`tab ${pathname === "/items/new" ? "active" : ""}`}>Novo Item</Link>
+
+        <Link 
+        to="/inventoryManager/items" 
+        className={`tab ${pathname === "/items" ? "active" : ""}`}
+        >
+          Todos os itens
+        </Link>
+
+
+        <Link 
+        to="/inventoryManager/items/new" 
+        className={`tab ${pathname === "/items/new" ? "active" : ""}`}
+        >
+          Novo Item
+        </Link>
+        
       </div>
       <Outlet />
     </main>

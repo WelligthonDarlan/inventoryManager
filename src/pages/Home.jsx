@@ -37,7 +37,7 @@ export default function Home() {
   const inventoryTotal = items.reduce((sum, item) => +sum + +item.quantity, 0)
   const today = new Date()
   const limitDate = new Date()
-  limitDate.setDate(limitDate.getDate() - 1)
+  limitDate.setDate(limitDate.getDate() - 2)
   const recentItems = items.filter((item) => item.createdAt >= limitDate && item.createdAt <= today)
   const recentTotal = recentItems.reduce((total, item) => {
     return total + item.quantity;
